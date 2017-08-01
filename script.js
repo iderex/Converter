@@ -3,11 +3,11 @@ document.getElementById('output2').style.visibility = 'hidden';
 document.getElementById('output3').style.visibility = 'hidden';
 document.getElementById('lbsInput').addEventListener('input', function(e){
     let lbs = e.target.value;
-        if(e == ''){
+        if(lbs <= 0){
             document.getElementById('output1').style.visibility = 'hidden';
             document.getElementById('output2').style.visibility = 'hidden';
             document.getElementById('output3').style.visibility = 'hidden';
-        }
+        } 
         else{
             document.getElementById('output1').style.visibility = 'visible';
             document.getElementById('output2').style.visibility = 'visible';
@@ -22,7 +22,7 @@ document.getElementById('output5').style.visibility = 'hidden';
 document.getElementById('output6').style.visibility = 'hidden';
 document.getElementById('gramInput').addEventListener('input', function(e){
     let gram = e.target.value;
-        if(e == ''){
+        if(gram <= 0){
             document.getElementById('output4').style.visibility = 'hidden';
             document.getElementById('output5').style.visibility = 'hidden';
             document.getElementById('output6').style.visibility = 'hidden';
@@ -41,7 +41,7 @@ document.getElementById('output8').style.visibility = 'hidden';
 document.getElementById('output9').style.visibility = 'hidden';
 document.getElementById('kgInput').addEventListener('input', function(e){
     let kg = e.target.value;
-        if(e == ''){
+        if(kg <= 0){
             document.getElementById('output7').style.visibility = 'hidden';
             document.getElementById('output8').style.visibility = 'hidden';
             document.getElementById('output9').style.visibility = 'hidden';
@@ -60,7 +60,7 @@ document.getElementById('output11').style.visibility = 'hidden';
 document.getElementById('output12').style.visibility = 'hidden';
 document.getElementById('ozInput').addEventListener('input', function(e){
     let oz = e.target.value;
-        if(e == ''){
+        if(oz <= 0){
             document.getElementById('output10').style.visibility = 'hidden';
             document.getElementById('output11').style.visibility = 'hidden';
             document.getElementById('output12').style.visibility = 'hidden';
@@ -73,4 +73,4 @@ document.getElementById('ozInput').addEventListener('input', function(e){
             document.getElementById('gramsOutput4').innerHTML = (oz*453.59237).toFixed(2);
             document.getElementById('kgOutput4').innerHTML = (oz*0.02834952).toFixed(2);
         }
-})       
+}) 
