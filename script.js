@@ -3,7 +3,7 @@ document.getElementById('output2').style.visibility = 'hidden';
 document.getElementById('output3').style.visibility = 'hidden';
 document.getElementById('lbsInput').addEventListener('input', function(e){
     let lbs = e.target.value;
-        if(e == 0){
+        if(e == ''){
             document.getElementById('output1').style.visibility = 'hidden';
             document.getElementById('output2').style.visibility = 'hidden';
             document.getElementById('output3').style.visibility = 'hidden';
@@ -22,7 +22,7 @@ document.getElementById('output5').style.visibility = 'hidden';
 document.getElementById('output6').style.visibility = 'hidden';
 document.getElementById('gramInput').addEventListener('input', function(e){
     let gram = e.target.value;
-        if(e == 0){
+        if(e == ''){
             document.getElementById('output4').style.visibility = 'hidden';
             document.getElementById('output5').style.visibility = 'hidden';
             document.getElementById('output6').style.visibility = 'hidden';
@@ -41,7 +41,7 @@ document.getElementById('output8').style.visibility = 'hidden';
 document.getElementById('output9').style.visibility = 'hidden';
 document.getElementById('kgInput').addEventListener('input', function(e){
     let kg = e.target.value;
-        if(e == 0){
+        if(e == ''){
             document.getElementById('output7').style.visibility = 'hidden';
             document.getElementById('output8').style.visibility = 'hidden';
             document.getElementById('output9').style.visibility = 'hidden';
@@ -60,7 +60,7 @@ document.getElementById('output11').style.visibility = 'hidden';
 document.getElementById('output12').style.visibility = 'hidden';
 document.getElementById('ozInput').addEventListener('input', function(e){
     let oz = e.target.value;
-        if(e == 0){
+        if(e == ''){
             document.getElementById('output10').style.visibility = 'hidden';
             document.getElementById('output11').style.visibility = 'hidden';
             document.getElementById('output12').style.visibility = 'hidden';
