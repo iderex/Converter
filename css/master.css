@@ -1,5 +1,8 @@
 body{
-    margin-top:70px;
     background:#333;
     color: #fff;
+}
+
+.container{
+    margin-top: 70px;
 }
